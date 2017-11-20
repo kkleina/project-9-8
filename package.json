@@ -1,0 +1,26 @@
+{
+  "name": "project-9-8",
+  "version": "1.0.0",
+  "description": "Project 9.8",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkleina/project-9-8.git"
+  },
+  "author": "KK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkleina/project-9-8/issues"
+  },
+  "homepage": "https://github.com/kkleina/project-9-8#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
