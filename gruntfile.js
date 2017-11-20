@@ -8,11 +8,11 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'css/style.css': 'src/scss/style.scss'
+          'src/css/style.css': 'src/scss/style.scss'
         }
       }
     },
-      
+
     imagemin: {
       dynamic: {
         files: [{
@@ -23,17 +23,29 @@ module.exports = function(grunt) {
         }]
       }
     },
-      
+
+    autoprefixer: {
+      dist: {
+        files: {
+          'css/style.css': 'src/css/style.css'
+        }
+      }
+    },
+
     watch: {
       css: {
         files: ['src/scss/*.scss'],
         tasks: ['sass'],
         options: {
           spawn: false,
-        },
+        }
       },
+      prefixer: {
+        files: ['css/style.css'],
+        tasks: ['autoprefixer']
+      }
     },
-      
+
     browserSync: {
       dev: {
         bsFiles: {
@@ -51,14 +63,15 @@ module.exports = function(grunt) {
         }
       }
     }
-    
+
   });
   // Load the plugins tasks
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
-  
+
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'imagemin', 'browserSync', 'watch']);
+  grunt.registerTask('default', ['sass', 'imagemin', 'autoprefixer', 'browserSync', 'watch']);
 };
