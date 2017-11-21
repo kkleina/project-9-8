@@ -116,7 +116,7 @@ button,
 
 /* HEADER */
 header {
-  background: url("../images/bg1.jpg") center/cover; }
+  /* background: url("../images/bg1.jpg") center/cover fixed;*/ }
   header .container {
     min-height: 750px; }
     header .container > * {
@@ -201,7 +201,7 @@ section {
     position: relative; }
 
 .subscribe {
-  background: url("../images/bg2.jpg") center/cover;
+  /* background: url('../images/bg2.jpg') center/cover;*/
   padding-bottom: 100px; }
   .subscribe .container {
     min-height: 550px; }
@@ -251,7 +251,9 @@ section {
   .community .control {
     margin-top: 20px; }
   .features .image img {
-    left: auto !important;
+    left: 0 !important;
+    right: 0;
+    margin: 0 auto;
     max-width: 90%; }
   p.uppercase {
     padding: 0; }
@@ -274,6 +276,7 @@ section {
 
 /* FOOTER */
 footer {
+  overflow: hidden;
   padding: 30px 0; }
   footer p {
     font-weight: bold;
