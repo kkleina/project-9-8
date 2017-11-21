@@ -1,8 +1,8 @@
 $(function() {
 
 // paralax
-  $('header').parallax({imageSrc: '../images/bg1.jpg', speed: 0.5});
-  $('.subscribe').parallax({imageSrc: '../images/bg2.jpg', speed: 0.5});
+  $('header').parallax({imageSrc: 'images/bg1.jpg', speed: 0.5});
+  $('.subscribe').parallax({imageSrc: 'images/bg2.jpg', speed: 0.5});
 
 // animations ScrollReveal
   window.sr = ScrollReveal();
