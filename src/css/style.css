@@ -88,8 +88,7 @@ button,
   transition: .5s; }
   .btn-social:hover,
   .btn-transbg:hover {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4); }
+    transform: scale(1.4); }
 
 .btn-social {
   color: #fff;
@@ -197,9 +196,7 @@ section {
     line-height: 1;
     margin: 0 10px; }
   .community .control {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
+    justify-content: flex-end; }
   .community .image img {
     position: relative; }
 
@@ -249,12 +246,8 @@ section {
       margin-top: 40px; }
   .image,
   .control {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important; }
+    justify-content: center !important; }
   .community .control {
     margin-top: 20px; }
   .features .image img {
@@ -275,13 +268,9 @@ section {
   .subscribe .container {
     min-height: calc(100vh - 200px); }
   .community .d-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    flex-direction: column; }
     .community .d-flex img {
-      -ms-flex-item-align: center;
-          align-self: center; } }
+      align-self: center; } }
 
 /* FOOTER */
 footer {
@@ -300,15 +289,9 @@ footer {
       color: #1abc9c;
       text-decoration: none; }
   footer .col-12:last-of-type {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    justify-content: flex-end;
+    align-items: center; }
 
 @media (max-width: 767px) {
   footer {
@@ -316,6 +299,6 @@ footer {
     footer p {
       font-size: 12px; }
     footer .col-12:last-of-type {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
+      justify-content: center; } }
+
+/*# sourceMappingURL=style.css.map */
